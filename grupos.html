@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
@@ -28,6 +28,112 @@
   <link rel="preload" as="image" href="./assets/images/hero-slider-1.jpg">
   <link rel="preload" as="image" href="./assets/images/hero-slider-2.jpg">
   <link rel="preload" as="image" href="./assets/images/hero-slider-3.jpg">
+
+  <!-- Estilos adicionales para los desplegables -->
+  <style>
+    .accordion {
+      margin: 20px 0;
+      border: 1px solid var(--gold-crayola, #d4a017);
+      border-radius: 8px;
+      overflow: hidden;
+      background-color: var(--eerie-black-3, #3a3c3e);
+    }
+
+    .accordion-header {
+      background-color: var(--eerie-black-1, #1a1c1e);
+      color: var(--white, #fff);
+      padding: 15px;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: background-color 0.3s ease;
+    }
+
+    .accordion-header:hover {
+      background-color: var(--eerie-black-2, #2a2c2e);
+    }
+
+    .accordion-header h3 {
+      margin: 0;
+      font-family: 'Forum', serif;
+      font-size: var(--fontSize-title-1, 2rem);
+    }
+
+    .accordion-header .label-2 {
+      font-family: 'DM Sans', sans-serif;
+      font-size: var(--fontSize-label-2, 1.4rem);
+      color: var(--gold-crayola, #d4a017);
+    }
+
+    .accordion-header .icon {
+      transition: transform 0.3s ease;
+    }
+
+    .accordion-header.active .icon {
+      transform: rotate(180deg);
+    }
+
+    .accordion-content {
+      display: none;
+      padding: 20px;
+      background-color: var(--eerie-black-3, #3a3c3e);
+      color: var(--white, #fff);
+      font-family: 'DM Sans', sans-serif;
+      font-size: var(--fontSize-body-3, 1.5rem);
+      line-height: 1.6;
+    }
+
+    .accordion-content.active {
+      display: block;
+    }
+
+    .accordion-content ul {
+      list-style: none;
+      padding: 0;
+      margin: 15px 0;
+    }
+
+    .accordion-content ul li {
+      position: relative;
+      padding-left: 20px;
+      margin-bottom: 10px;
+    }
+
+    .accordion-content ul li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: var(--gold-crayola, #d4a017);
+      font-size: 1.5rem;
+    }
+
+    .accordion-content .wrapper {
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    .accordion-content .wrapper .span {
+      font-size: var(--fontSize-body-1, 1.8rem);
+      color: var(--gold-crayola, #d4a017);
+      font-weight: 700;
+    }
+
+    /* Ajustes responsivos */
+    @media (max-width: 768px) {
+      .accordion-header h3 {
+        font-size: calc(var(--fontSize-title-1, 2rem) * 0.9);
+      }
+
+      .accordion-header .label-2 {
+        font-size: calc(var(--fontSize-label-2, 1.4rem) * 0.9);
+      }
+
+      .accordion-content {
+        font-size: calc(var(--fontSize-body-3, 1.5rem) * 0.9);
+      }
+    }
+  </style>
 </head>
 
 <body id="top">
@@ -186,76 +292,85 @@
             Reserva con al menos 24 horas de antelación.
           </p>
 
-          <ul class="grid-list">
-            <!-- Menú Sakura (4-6 personas) -->
-            <li>
-              <div class="menu-card bg-black-10">
-                <h3 class="title-1">Menú Sakura</h3>
-                <p class="label-2">4-6 personas</p>
-                <ul class="menu-items body-3">
-                  <li>Miso Shiru (sopa de miso)</li>
-                  <li>Edamame al vapor</li>
-                  <li>Surtido de sushi (12 piezas)</li>
-                  <li>Tonkatsu Katsudon (2 raciones)</li>
-                  <li>Yakisoba con pollo</li>
-                  <li>Mochi de postre</li>
-                </ul>
-                <div class="wrapper">
-                  <span class="span body-1">¥4500 / persona</span>
-                </div>
+          <!-- Desplegables para los menús -->
+          <!-- Menú Sakura -->
+          <div class="accordion">
+            <div class="accordion-header" role="button" aria-expanded="false" aria-controls="menu-sakura-content">
+              <h3>Menú Sakura</h3>
+              <span class="label-2">4-6 personas</span>
+              <ion-icon name="chevron-down" class="icon" aria-hidden="true"></ion-icon>
+            </div>
+            <div class="accordion-content" id="menu-sakura-content">
+              <ul class="menu-items body-3">
+                <li>Miso Shiru (sopa de miso)</li>
+                <li>Edamame al vapor</li>
+                <li>Surtido de sushi (12 piezas)</li>
+                <li>Tonkatsu Katsudon (2 raciones)</li>
+                <li>Yakisoba con pollo</li>
+                <li>Mochi de postre</li>
+              </ul>
+              <div class="wrapper">
+                <span class="span body-1">¥4500 / persona</span>
               </div>
-            </li>
+            </div>
+          </div>
 
-            <!-- Menú Hanami (8-10 personas) -->
-            <li>
-              <div class="menu-card bg-black-10">
-                <h3 class="title-1">Menú Hanami</h3>
-                <p class="label-2">8-10 personas</p>
-                <ul class="menu-items body-3">
-                  <li>Miso Shiru (sopa de miso)</li>
-                  <li>Gyoza de cerdo (10 unidades)</li>
-                  <li>Surtido de sushi (20 piezas)</li>
-                  <li>Ramen Kurobuta (2 raciones)</li>
-                  <li>Teriyaki de salmón</li>
-                  <li>Helado de té verde</li>
-                </ul>
-                <div class="wrapper">
-                  <span class="span body-1">¥5200 / persona</span>
-                </div>
+          <!-- Menú Hanami -->
+          <div class="accordion">
+            <div class="accordion-header" role="button" aria-expanded="false" aria-controls="menu-hanami-content">
+              <h3>Menú Hanami</h3>
+              <span class="label-2">8-10 personas</span>
+              <ion-icon name="chevron-down" class="icon" aria-hidden="true"></ion-icon>
+            </div>
+            <div class="accordion-content" id="menu-hanami-content">
+              <ul class="menu-items body-3">
+                <li>Miso Shiru (sopa de miso)</li>
+                <li>Gyoza de cerdo (10 unidades)</li>
+                <li>Surtido de sushi (20 piezas)</li>
+                <li>Ramen Kurobuta (2 raciones)</li>
+                <li>Teriyaki de salmón</li>
+                <li>Helado de té verde</li>
+              </ul>
+              <div class="wrapper">
+                <span class="span body-1">¥5200 / persona</span>
               </div>
-            </li>
+            </div>
+          </div>
 
-            <!-- Menú Matsuri (12+ personas) -->
-            <li>
-              <div class="menu-card bg-black-10">
-                <h3 class="title-1">Menú Matsuri</h3>
-                <p class="label-2">12+ personas</p>
-                <ul class="menu-items body-3">
-                  <li>Miso Shiru (sopa de miso)</li>
-                  <li>Tempura de gambas y verduras</li>
-                  <li>Surtido de sushi (30 piezas)</li>
-                  <li>Tonkatsu Katsudon (3 raciones)</li>
-                  <li>Ramen Kurobuta (3 raciones)</li>
-                  <li>Mochi y helado de té verde</li>
-                </ul>
-                <div class="wrapper">
-                  <span class="span body-1">¥6000 / persona</span>
-                </div>
+          <!-- Menú Matsuri -->
+          <div class="accordion">
+            <div class="accordion-header" role="button" aria-expanded="false" aria-controls="menu-matsuri-content">
+              <h3>Menú Matsuri</h3>
+              <span class="label-2">12+ personas</span>
+              <ion-icon name="chevron-down" class="icon" aria-hidden="true"></ion-icon>
+            </div>
+            <div class="accordion-content" id="menu-matsuri-content">
+              <ul class="menu-items body-3">
+                <li>Miso Shiru (sopa de miso)</li>
+                <li>Tempura de gambas y verduras</li>
+                <li>Surtido de sushi (30 piezas)</li>
+                <li>Tonkatsu Katsudon (3 raciones)</li>
+                <li>Ramen Kurobuta (3 raciones)</li>
+                <li>Mochi y helado de té verde</li>
+              </ul>
+              <div class="wrapper">
+                <span class="span body-1">¥6000 / persona</span>
               </div>
-            </li>
-          </ul>
+            </div>
+          </div>
         </div>
       </section>
 
     </article>
   </main>
-      <!--IMAGEN DE RELLENO-->
 
-      <section class="section testi text-center has-bg-image"
-        style="background-image: url('./assets/images/bg-relleno.jpg')" aria-label="Imagen de relleno">
-      </section>
-   <!-- #FOOTER -->
-   <footer class="footer section has-bg-image text-center" style="background-image: url('./assets/images/footer-bg.jpg')">
+  <!-- IMAGEN DE RELLENO -->
+  <section class="section testi text-center has-bg-image"
+    style="background-image: url('./assets/images/bg-relleno.jpg')" aria-label="Imagen de relleno">
+  </section>
+
+  <!-- #FOOTER -->
+  <footer class="footer section has-bg-image text-center" style="background-image: url('./assets/images/footer-bg.jpg')">
     <div class="container">
       <div class="footer-top grid-list">
         <ul class="footer-list">
@@ -298,6 +413,42 @@
   <!-- ionicon link -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <!-- JavaScript para los desplegables -->
+  <script>
+    document.querySelectorAll('.accordion-header').forEach(header => {
+      header.addEventListener('click', () => {
+        const content = header.nextElementSibling;
+        const isOpen = content.classList.contains('active');
+
+        // Cerrar todos los desplegables
+        document.querySelectorAll('.accordion-content').forEach(item => {
+          item.classList.remove('active');
+          item.style.display = 'none';
+        });
+        document.querySelectorAll('.accordion-header').forEach(item => {
+          item.classList.remove('active');
+          item.setAttribute('aria-expanded', 'false');
+        });
+
+        // Abrir el desplegable clicado si no estaba abierto
+        if (!isOpen) {
+          content.classList.add('active');
+          content.style.display = 'block';
+          header.classList.add('active');
+          header.setAttribute('aria-expanded', 'true');
+        }
+      });
+
+      // Asegurar accesibilidad con teclado
+      header.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          header.click();
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>
