@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- meta tags -->
+  <title>Izakaya Sakura - Menús de Grupos</title>
+  <meta name="title" content="Izakaya Sakura - Menús de Grupos">
+  <meta name="description" content="Explora nuestros menús diseñados para grupos en Izakaya Sakura, perfectos para celebraciones y reuniones.">
+  <meta name="keywords" content="Izakaya Sakura, restaurante, comida japonesa, menús de grupos, eventos">
+  <meta name="author" content="Izakaya Sakura">
+
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./favicon.png" type="image/png">
+
+  <!-- google font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+
+  <!-- custom css link -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- preload images -->
+  <link rel="preload" as="image" href="./assets/images/hero-slider-1.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-slider-2.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-slider-3.jpg">
+</head>
+
+<body id="top">
+
+  <!-- #PRELOADER -->
+  <div class="preload" data-preaload>
+    <div class="circle"></div>
+    <p class="text">Izakaya Sakura</p>
+  </div>
+
+  <!-- #TOP BAR -->
+  <div class="topbar">
+    <div class="container">
+      <address class="topbar-item">
+        <div class="icon">
+          <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+        </div>
+        <span class="span">
+          〒106-0032 東京都港区六本木3-10-4 六本木パークビル B1F
+        </span>
+      </address>
+      <div class="separator"></div>
+      <div class="topbar-item item-2">
+        <div class="icon">
+          <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+        </div>
+        <span class="span">Abierto todos los días de 13:00 - 22:00 h</span>
+      </div>
+      <a href="tel:+34123456789" class="topbar-item link">
+        <div class="icon">
+          <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+        </div>
+        <span class="span">+34 123 456 789</span>
+      </a>
+      <div class="separator"></div>
+      <a href="mailto:info@izakayasakura.com" class="topbar-item link">
+        <div class="icon">
+          <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+        </div>
+        <span class="span">info@izakayasakura.com</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- #HEADER -->
+  <header class="header" data-header>
+    <div class="container">
+      <a href="./index.html" class="logo">
+        <img src="./assets/images/logo.png" width="160" height="50" alt="Izakaya Sakura - Home">
+      </a>
+      <nav class="navbar" data-navbar>
+        <button class="close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+        <a href="#" class="logo">
+          <img src="./assets/images/logo.png" width="160" height="50" alt="Izakaya Sakura - Home">
+        </a>
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <a href="./index.html" class="navbar-link hover-underline">
+              <div class="separator"></div>
+              <span class="span">Inicio</span>
+            </a>
+          </li>
+          <li class="navbar-item">
+            <a href="./carta.html" class="navbar-link hover-underline">
+              <div class="separator"></div>
+              <span class="span">Carta</span>
+            </a>
+          </li>
+          <li class="navbar-item">
+            <a href="./especialidades.html" class="navbar-link hover-underline">
+              <div class="separator"></div>
+              <span class="span">Especialidades</span>
+            </a>
+          </li>
+          <li class="navbar-item">
+            <a href="./grupos.html" class="navbar-link hover-underline active">
+              <div class="separator"></div>
+              <span class="span">Menús de grupos</span>
+            </a>
+          </li>
+          <li class="navbar-item">
+            <a href="./contacto.html" class="navbar-link hover-underline">
+              <div class="separator"></div>
+              <span class="span">Reservas</span>
+            </a>
+          </li>
+        </ul>
+        <div class="text-center">
+          <p class="headline-1 navbar-title">Visítanos</p>
+          <address class="body-4">
+            〒106-0032 東京都港区六本木3-10-4 六本木パークビル B1F
+          </address>
+          <p class="body-4 navbar-text">Abierto todos los días de 13:00 - 22:00 h</p>
+          <a href="mailto:info@izakayasakura.com" class="body-4 sidebar-link">info@izakayasakura.com</a>
+          <div class="separator"></div>
+          <p class="contact-label">Llámanos</p>
+          <a href="tel:+34 123 456 789" class="body-1 contact-number hover-underline">
+            +34 123 456 789
+          </a>
+        </div>
+      </nav>
+      <a href="./contacto.html" class="btn btn-secondary">
+        <span class="text text-1">CONTACTA AQUI</span>
+        <span class="text text-2" aria-hidden="true">CONTACTA AQUI</span>
+      </a>
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+      <div class="overlay" data-nav-toggler data-overlay></div>
+    </div>
+  </header>
+
+  <main>
+    <article>
+
+      <!-- #HERO -->
+      <section class="hero text-center" aria-label="home" id="home">
+        <ul class="hero-slider" data-hero-slider>
+          <li class="slider-item active" data-hero-slider-item>
+            <div class="slider-bg">
+              <img src="./assets/images/hero-slider-2.jpg" width="1880" height="950" alt="" class="img-cover">
+            </div>
+            <div class="slider-overlay"></div>
+            <p class="label-2 section-subtitle slider-reveal">Celebraciones en Grupo</p>
+            <h1 class="display-1 hero-title slider-reveal">
+              Menús para <br> Compartir
+            </h1>
+            <p class="body-2 hero-text slider-reveal">
+              Opciones perfectas para reuniones, eventos y momentos especiales
+            </p>
+            <a href="#menus-grupos" class="btn btn-primary slider-reveal">
+              <span class="text text-1">Descubre los menús</span>
+              <span class="text text-2" aria-hidden="true">Descubre los menús</span>
+            </a>
+          </li>
+        </ul>
+        <button class="slider-btn prev" aria-label="slide to previous" data-prev-btn>
+          <ion-icon name="chevron-back"></ion-icon>
+        </button>
+        <button class="slider-btn next" aria-label="slide to next" data-next-btn>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </button>
+      </section>
+
+      <!-- #MENUS DE GRUPOS -->
+      <section class="section group-menus text-center" aria-label="group-menus" id="menus-grupos">
+        <div class="container">
+          <p class="section-subtitle label-2">Para tus Eventos</p>
+          <h2 class="headline-1 section-title">Menús de Grupos</h2>
+          <p class="section-text">
+            Diseñados para compartir y disfrutar en compañía, nuestros menús incluyen una selección de platos japoneses auténticos. 
+            Reserva con al menos 24 horas de antelación.
+          </p>
+
+          <ul class="grid-list">
+            <!-- Menú Sakura (4-6 personas) -->
+            <li>
+              <div class="menu-card bg-black-10">
+                <h3 class="title-1">Menú Sakura</h3>
+                <p class="label-2">4-6 personas</p>
+                <ul class="menu-items body-3">
+                  <li>Miso Shiru (sopa de miso)</li>
+                  <li>Edamame al vapor</li>
+                  <li>Surtido de sushi (12 piezas)</li>
+                  <li>Tonkatsu Katsudon (2 raciones)</li>
+                  <li>Yakisoba con pollo</li>
+                  <li>Mochi de postre</li>
+                </ul>
+                <div class="wrapper">
+                  <span class="span body-1">¥4500 / persona</span>
+                </div>
+              </div>
+            </li>
+
+            <!-- Menú Hanami (8-10 personas) -->
+            <li>
+              <div class="menu-card bg-black-10">
+                <h3 class="title-1">Menú Hanami</h3>
+                <p class="label-2">8-10 personas</p>
+                <ul class="menu-items body-3">
+                  <li>Miso Shiru (sopa de miso)</li>
+                  <li>Gyoza de cerdo (10 unidades)</li>
+                  <li>Surtido de sushi (20 piezas)</li>
+                  <li>Ramen Kurobuta (2 raciones)</li>
+                  <li>Teriyaki de salmón</li>
+                  <li>Helado de té verde</li>
+                </ul>
+                <div class="wrapper">
+                  <span class="span body-1">¥5200 / persona</span>
+                </div>
+              </div>
+            </li>
+
+            <!-- Menú Matsuri (12+ personas) -->
+            <li>
+              <div class="menu-card bg-black-10">
+                <h3 class="title-1">Menú Matsuri</h3>
+                <p class="label-2">12+ personas</p>
+                <ul class="menu-items body-3">
+                  <li>Miso Shiru (sopa de miso)</li>
+                  <li>Tempura de gambas y verduras</li>
+                  <li>Surtido de sushi (30 piezas)</li>
+                  <li>Tonkatsu Katsudon (3 raciones)</li>
+                  <li>Ramen Kurobuta (3 raciones)</li>
+                  <li>Mochi y helado de té verde</li>
+                </ul>
+                <div class="wrapper">
+                  <span class="span body-1">¥6000 / persona</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+    </article>
+  </main>
+      <!--IMAGEN DE RELLENO-->
+
+      <section class="section testi text-center has-bg-image"
+        style="background-image: url('./assets/images/bg-relleno.jpg')" aria-label="Imagen de relleno">
+      </section>
+   <!-- #FOOTER -->
+   <footer class="footer section has-bg-image text-center" style="background-image: url('./assets/images/footer-bg.jpg')">
+    <div class="container">
+      <div class="footer-top grid-list">
+        <ul class="footer-list">
+          <li><a href="./index.html" class="label-2 footer-link hover-underline">Inicio</a></li>
+          <li><a href="./carta.html" class="label-2 footer-link hover-underline">Carta</a></li>
+          <li><a href="./especialidades.html" class="label-2 footer-link hover-underline">Especialidades</a></li>
+          <li><a href="./grupos.html" class="label-2 footer-link hover-underline">Menús de grupos</a></li>
+          <li><a href="./contacto.html" class="label-2 footer-link hover-underline">Reservas</a></li>
+        </ul>
+        <ul class="footer-list">
+          <li><a href="https://www.facebook.com/?locale=es_ES/" class="label-2 footer-link hover-underline">Facebook</a></li>
+          <li><a href="https://www.instagram.com/" class="label-2 footer-link hover-underline">Instagram</a></li>
+          <li><a href="https://x.com/" class="label-2 footer-link hover-underline">Twitter</a></li>
+          <li><a href="https://www.youtube.com/" class="label-2 footer-link hover-underline">YouTube</a></li>
+          <li><a href="https://maps.app.goo.gl/TXMZ3bjhT5GtjwX59" class="label-2 footer-link hover-underline">Google Map</a></li>
+        </ul>
+        <ul class="footer-list">
+          <li><a href="#cookies" class="label-2 footer-link hover-underline">Política de Cookies</a></li>
+          <li><a href="#privacidad" class="label-2 footer-link hover-underline">Política de Privacidad</a></li>
+          <li><a href="#terminos" class="label-2 footer-link hover-underline">Términos y Condiciones</a></li>
+          <li><a href="#aviso-legal" class="label-2 footer-link hover-underline">Aviso Legal</a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <p class="copyright">
+          © 2025 Izakaya Sakura. Todos los derechos reservados | Creado por <a href="https://github.com/pablordn" target="_blank" class="link">Pablo Ruiz</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- #BACK TO TOP -->
+  <a href="#top" class="back-top-btn active" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+  <!-- custom js link -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- ionicon link -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

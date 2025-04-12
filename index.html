@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--  meta tags-->
+  <title>Izakaya Sakura - Bienvenido</title>
+  <meta name="title" content="Izakaya Sakura - Bienvenido">
+  <meta name="description" content="Es un restaurante de comida japonesa ubicado en el corazón de la ciudad.">
+  <meta name="keywords" content="Izakaya Sakura, restaurante, comida japonesa, sushi, ramen">
+  <meta name="author" content="Izakaya Sakura">
+
+  <!-- favicon-->
+  <link rel="shortcut icon" href="./favicon.png" type="image/svg+xml">
+
+  <!--google font link-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-slider-1.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-slider-2.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-slider-3.jpg">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #PRELOADER
+  -->
+
+  <div class="preload" data-preaload>
+    <div class="circle"></div>
+    <p class="text">Izakaya Sakura</p>
+  </div>
+
+
+
+
+
+  <!-- 
+    - #TOP BAR
+  -->
+
+  <div class="topbar">
+    <div class="container">
+
+      <address class="topbar-item">
+        <div class="icon">
+          <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">
+          〒106-0032 東京都港区六本木3-10-4 六本木パークビル B1F
+        </span>
+      </address>
+
+      <div class="separator"></div>
+
+      <div class="topbar-item item-2">
+        <div class="icon">
+          <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">Abierto todos los días de 13:00 - 22:00 h</span>
+      </div>
+
+      <a href="tel:+34123456789" class="topbar-item link">
+        <div class="icon">
+          <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">+34 123 456 789</span>
+      </a>
+
+      <div class="separator"></div>
+
+      <a href="mailto:booking@restaurant.com" class="topbar-item link">
+        <div class="icon">
+          <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">tfgpabloruiz@tokioschool.com</span>
+      </a>
+
+    </div>
+  </div>
+
+
+
+
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="/index.html" class="logo">
+        <img src="./assets/images/logo.png" width="160" height="50" alt="Grilli - Home">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <a href="#" class="logo">
+          <img src="./assets/images/logo.png" width="160" height="50" alt="Grilli - Home">
+        </a>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="./index.html" class="navbar-link hover-underline active">
+              <div class="separator"></div>
+
+              <span class="span">Inicio</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./carta.html" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Carta</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./especialidades.html" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Especialidades</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./grupos.html" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Menus de grupos</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./contacto.html" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Reservas</span>
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="text-center">
+          <p class="headline-1 navbar-title">Visítanos</p>
+
+          <address class="body-4">
+            〒106-0032 東京都港区六本木3-10-4 六本木パークビル B1F
+          </address>
+
+          <p class="body-4 navbar-text">Abierto todos los días de 13:00 - 22:00 h</p>
+
+          <a href="mailto:tfgpabloruiz@tokioschool.com" class="body-4 sidebar-link">tfgpabloruiz@tokioschool.com</a>
+
+          <div class="separator"></div>
+
+          <p class="contact-label">Llámanos</p>
+
+          <a href="tel:+34 123 456 789" class="body-1 contact-number hover-underline">
+            +34 123 456 789
+          </a>
+        </div>
+      </nav>
+
+
+      <a href="/contacto.html" class="btn btn-secondary">
+        <span class="text text-1">CONTACTA AQUI</span>
+
+        <span class="text text-2" aria-hidden="true">CONTACTA AQUI</span>
+      </a>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero text-center" aria-label="home" id="home">
+
+        <ul class="hero-slider" data-hero-slider>
+
+          <li class="slider-item active" data-hero-slider-item>
+            <div class="slider-bg">
+              <img src="./assets/images/hero-slider-1.jpg" width="1880" height="950" alt="" class="img-cover">
+            </div>
+
+            <div class="slider-overlay"></div>
+            
+            <p class="label-2 section-subtitle slider-reveal">Japón Gourmet</p>
+
+            <h1 class="display-1 hero-title slider-reveal">
+              Un viaje por los <br> 
+              sabores auténticos de Japón
+            </h1>
+
+            <p class="body-2 hero-text slider-reveal">
+              Reúnete con tu familia y descubre la felicidad en cada bocado
+            </p>
+
+            <a href="./carta.html" class="btn btn-primary slider-reveal">
+              <span class="text text-1">Descubre nuestra carta</span>
+
+              <span class="text text-2" aria-hidden="true">Descubre nuestra carta</span>
+            </a>
+
+          </li>
+
+          <li class="slider-item" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="./assets/images/hero-slider-2.jpg" width="1880" height="950" alt="" class="img-cover">
+            </div>
+          
+            <!-- 🟡 Capa overlay -->
+            <div class="slider-overlay"></div>
+          
+            <p class="label-2 section-subtitle slider-reveal">Espíritu Washoku</p>
+          
+            <h1 class="display-1 hero-title slider-reveal">
+              Sabores que siguen <br>
+              el ritmo de las estaciones
+            </h1>
+          
+            <p class="body-2 hero-text slider-reveal">
+              Reúnete con tu familia y descubre la felicidad en cada bocado.
+            </p>
+          
+            <a href="./carta.html" class="btn btn-primary slider-reveal">
+              <span class="text text-1">Descubre nuestra carta</span>
+              <span class="text text-2" aria-hidden="true">Descubre nuestra carta</span>
+            </a>
+          
+          </li>
+          
+
+          <li class="slider-item" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="./assets/images/hero-slider-3.jpg" width="1880" height="950" alt="" class="img-cover">
+            </div>
+
+            <div class="slider-overlay"></div>
+
+            <p class="label-2 section-subtitle slider-reveal">Estilo Izakaya</p>
+
+            <h1 class="display-1 hero-title slider-reveal">
+              De la tierra del sol <br>
+              naciente a tu mesa
+            </h1>
+
+            <p class="body-2 hero-text slider-reveal">
+              Reúnete con tu familia y descubre la felicidad en cada bocado.
+            </p>
+
+            <a href="./carta.html" class="btn btn-primary slider-reveal">
+              <span class="text text-1">Descubre nuestra carta</span>
+
+              <span class="text text-2" aria-hidden="true">Descubre nuestra carta</span>
+            </a>
+
+          </li>
+
+        </ul>
+
+        <button class="slider-btn prev" aria-label="slide to previous" data-prev-btn>
+          <ion-icon name="chevron-back"></ion-icon>
+        </button>
+
+        <button class="slider-btn next" aria-label="slide to next" data-next-btn>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </button>
+
+
+
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="section service bg-black-10 text-center" aria-label="service">
+        <div class="container">
+
+          <p class="section-subtitle label-2">Sabores Majestuosos</p>
+
+          <h2 class="headline-1 section-title">Ofrecemos la mejor calidad</h2>
+
+          <p class="section-text">
+            Nos especializamos en brindar una experiencia gastronómica excepcional. Cada plato está cuidadosamente elaborado para ofrecerte lo mejor de la cocina japonesa, con ingredientes de primera calidad y una presentación impecable.
+          </p>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="service-card">
+
+                <a href="./carta.html" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="./assets/images/service-1.jpg" width="285" height="336" loading="lazy" alt="Ramen"
+                      class="img-cover">
+                  </figure>
+                </a>
+
+                <div class="card-content">
+
+                  <h3 class="title-4 card-title">
+                    <a href="./carta.html">Ramen</a>
+                  </h3>
+
+                  <a href="./carta.html" class="btn-text hover-underline label-2">Descubre nuestra carta</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <a href="./carta.html" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="./assets/images/service-2.jpg" width="285" height="336" loading="lazy" alt="Sushi"
+                      class="img-cover">
+                  </figure>
+                </a>
+
+                <div class="card-content">
+
+                  <h3 class="title-4 card-title">
+                    <a href="">Sushi</a>
+                  </h3>
+
+                  <a href="./carta.html" class="btn-text hover-underline label-2">Descubre nuestra carta</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <a href="#" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="./assets/images/service-3.jpg" width="285" height="336" loading="lazy" alt="Yakitori"
+                      class="img-cover">
+                  </figure>
+                </a>
+
+                <div class="card-content">
+
+                  <h3 class="title-4 card-title">
+                    <a href="#">Yakitori</a>
+                  </h3>
+
+                  <a href="#" class="btn-text hover-underline label-2">Descubre nuestra carta</a>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </section>
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about text-center" aria-labelledby="about-label" id="about">
+        <div class="container">
+          <div class="about-content">
+            <p class="label-2 section-subtitle" id="about-label">Nuestra historia</p>
+            <h2 class="title-1 section-title">Cada sabor cuenta una historia</h2>
+            <p class="section-text">
+              Un relato lleno de tradición, cultura y emociones que se transmiten a través de cada ingrediente. Al igual que el arte de la tipografía, que a lo largo del tiempo ha logrado adaptarse a los cambios, los sabores nos invitan a experimentar el pasado, el presente y las futuras innovaciones culinarias. Cada plato es una pequeña obra maestra que nos conecta con momentos y recuerdos, transformando la comida en una experiencia única e inolvidable.
+            </p>
+          </div>
+          <figure class="about-banner">
+            <img src="./assets/images/about-banner.jpg" width="570" height="570" loading="lazy" alt="about banner" class="w-100" data-parallax-item data-parallax-speed="1">
+            <div class="abs-img abs-img-1 has-before" data-parallax-item data-parallax-speed="1.75">
+              <img src="./assets/images/about-abs-image.jpg" width="285" height="285" loading="lazy" alt="" class="w-100">
+            </div>
+          </figure>
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SPECIAL DISH
+      -->
+
+      <section class="special-dish text-center" aria-labelledby="dish-label">
+
+        <div class="special-dish-banner">
+          <img src="./assets/images/special-dish-banner.jpg" width="940" height="900" loading="lazy" alt="special dish"
+            class="img-cover">
+        </div>
+
+        <div class="special-dish-content bg-black-10">
+          <div class="container">
+
+            <p class="section-subtitle label-2">Plato especial</p>
+
+            <h2 class="title-1 section-title">Tonkatsu Katsudon</h2>
+
+            <p class="section-text">
+              Es el más clásico y conocido. Se hace con tonkatsu, que es un filete de cerdo empanado y frito, servido sobre arroz y cubierto con una mezcla de huevo y salsa a base de soja.
+            </p>
+
+            <div class="wrapper">
+              <del class="del body-3">¥1700</del>
+
+              <span class="span body-1">¥1200</span>
+            </div>
+
+            <a href="./carta.html" class="btn btn-primary">
+              <span class="text text-1">Ver toda la carta</span>
+
+              <span class="text text-2" aria-hidden="true">Ver toda la carta</span>
+            </a>
+
+          </div>
+        </div>
+
+      </section>
+
+
+
+
+
+      <!-- 
+        - #MENU
+      -->
+
+      <section class="section menu" aria-label="menu-label" id="menu">
+        <div class="container">
+
+          <p class="section-subtitle text-center label-2">Nuestra seleccion personal</p>
+
+          <h2 class="headline-1 section-title text-center">Platos destacados</h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="menu-card hover:card">
+                <div>
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title" data-modal-target="modal-gyoza">Gyozas de Cerdo y Jengibre</a>
+                    </h3>
+                    <span class="span title-2">¥1200</span>
+                  </div>
+                  <p class="card-text label-1">Empanadillas fritas rellenas de cerdo y un toque picante</p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+                <div>
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title" data-modal-target="modal-nigiri">Nigiri de Salmón</a>
+                    </h3>
+                    <span class="span title-2">¥1000</span>
+                  </div>
+                  <p class="card-text label-1">Bola de arroz con una lámina de salmón fresco</p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+                <div>
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title" data-modal-target="modal-tonkotsu">Tonkotsu</a>
+                    </h3>
+                    <span class="span title-2">¥2000</span>
+                  </div>
+                  <p class="card-text label-1">Caldo espeso de cerdo con fideos y cebolla crujiente</p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+                <div>
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title" data-modal-target="modal-yakitori-pato">Yakitori de Pato</a>
+                    </h3>
+                    <span class="span title-2">¥1500</span>
+                  </div>
+                  <p class="card-text label-1">Pato jugoso a la parrilla con glaseado de mirin.</p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+                <div>
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title" data-modal-target="modal-takoyaki">Takoyaki</a>
+                    </h3>
+                    <span class="span title-2">¥1100</span>
+                  </div>
+                  <p class="card-text label-1">Bolitas de pulpo fritas con salsa tonkatsu y mayonesa.</p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+                <div>
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title" data-modal-target="modal-tsukune">Tsukune</a>
+                    </h3>
+                    <span class="span title-2">¥1000</span>
+                  </div>
+                  <p class="card-text label-1">Brocheta de albóndigas de pollo con salsa teriyaki.</p>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+
+
+          <a href="./carta.html" class="btn btn-primary">
+            <span class="text text-1">Ver toda la carta</span>
+
+            <span class="text text-2" aria-hidden="true">Ver toda la carta</span>
+          </a>
+        </div>
+
+        <div class="modal" id="modal-gyoza">
+          <div class="modal-content">
+            <span class="modal-close">×</span>
+            <img src="./assets/images/gyoza.jpg" alt="Gyoza de Cerdo y Jengibre" class="modal-image">
+          </div>
+        </div>
+        <div class="modal" id="modal-nigiri">
+          <div class="modal-content">
+            <span class="modal-close">×</span>
+            <img src="./assets/images/nigiri-salmon.jpg" alt="Nigiri de salmón" class="modal-image">
+          </div>
+        </div>
+        <div class="modal" id="modal-tonkotsu">
+          <div class="modal-content">
+            <span class="modal-close">×</span>
+            <img src="./assets/images/tonkotsu-ramen.jpg" alt="Tonkotsu Ramen" class="modal-image">
+          </div>
+        </div>
+        <div class="modal" id="modal-yakitori-pato">
+          <div class="modal-content">
+            <span class="modal-close">×</span>
+            <img src="./assets/images/yakitori-pato.jpg" alt="Yakitori de Pato" class="modal-image">
+          </div>
+        </div>
+        <div class="modal" id="modal-takoyaki">
+          <div class="modal-content">
+            <span class="modal-close">×</span>
+            <img src="./assets/images/takoyaki.jpg" alt="Takoyaki de Pulpo" class="modal-image">
+          </div>
+        </div>
+        <div class="modal" id="modal-tsukune">
+          <div class="modal-content">
+            <span class="modal-close">×</span>
+            <img src="./assets/images/tsukune.jpg" alt="Tsukune" class="modal-image">
+          </div>
+        </div>
+
+      </section>
+
+
+
+      <!--IMAGEN DE RELLENO-->
+
+      <section class="section testi text-center has-bg-image"
+        style="background-image: url('./assets/images/bg-relleno.jpg')" aria-label="Imagen de relleno">
+      </section>
+
+
+
+
+    <!-- #FOOTER -->
+    <footer class="footer section has-bg-image text-center" style="background-image: url('./assets/images/footer-bg.jpg')">
+      <div class="container">
+        <div class="footer-top grid-list">
+          <ul class="footer-list">
+            <li><a href="./index.html" class="label-2 footer-link hover-underline">Inicio</a></li>
+            <li><a href="./carta.html" class="label-2 footer-link hover-underline">Carta</a></li>
+            <li><a href="./especialidades.html" class="label-2 footer-link hover-underline">Especialidades</a></li>
+            <li><a href="./grupos.html" class="label-2 footer-link hover-underline">Menús de grupos</a></li>
+            <li><a href="./contacto.html" class="label-2 footer-link hover-underline">Reservas</a></li>
+          </ul>
+          <ul class="footer-list">
+            <li><a href="https://www.facebook.com/?locale=es_ES/" class="label-2 footer-link hover-underline">Facebook</a></li>
+            <li><a href="https://www.instagram.com/" class="label-2 footer-link hover-underline">Instagram</a></li>
+            <li><a href="https://x.com/" class="label-2 footer-link hover-underline">Twitter</a></li>
+            <li><a href="https://www.youtube.com/" class="label-2 footer-link hover-underline">YouTube</a></li>
+            <li><a href="https://maps.app.goo.gl/TXMZ3bjhT5GtjwX59" class="label-2 footer-link hover-underline">Google Map</a></li>
+          </ul>
+          <ul class="footer-list">
+            <li><a href="#cookies" class="label-2 footer-link hover-underline">Política de Cookies</a></li>
+            <li><a href="#privacidad" class="label-2 footer-link hover-underline">Política de Privacidad</a></li>
+            <li><a href="#terminos" class="label-2 footer-link hover-underline">Términos y Condiciones</a></li>
+            <li><a href="#aviso-legal" class="label-2 footer-link hover-underline">Aviso Legal</a></li>
+          </ul>
+        </div>
+        <div class="footer-bottom">
+          <p class="copyright">
+            © 2025 Izakaya Sakura. Todos los derechos reservados | Creado por <a href="https://github.com/pablordn" target="_blank" class="link">Pablo Ruiz</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+
+
+
+  <!--BACK TO TOP-->
+
+  <a href="#top" class="back-top-btn active" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!--CUSTOM LINK JS-->
+
+  <script src="./assets/js/script.js"></script>
+
+  <!-- LINK A IONICON-->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

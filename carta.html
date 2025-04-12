@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- meta tags -->
+  <title>Izakaya Sakura - Carta</title>
+  <meta name="title" content="Izakaya Sakura - Carta">
+  <meta name="description" content="Explora nuestra carta de comida japonesa en Izakaya Sakura.">
+  <meta name="keywords" content="Izakaya Sakura, restaurante, comida japonesa, sushi, ramen">
+  <meta name="author" content="Izakaya Sakura">
+
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./favicon.png" type="image/png">
+
+  <!-- google font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+
+  <!-- custom css link -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- preload images -->
+  <link rel="preload" as="image" href="./assets/images/hero-slider-1.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-slider-2.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-slider-3.jpg">
+</head>
+
+<body id="top">
+
+  <!-- #PRELOADER -->
+  <div class="preload" data-preaload>
+    <div class="circle"></div>
+    <p class="text">Izakaya Sakura</p>
+  </div>
+
+  <!-- #TOP BAR -->
+  <div class="topbar">
+    <div class="container">
+      <address class="topbar-item">
+        <div class="icon">
+          <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+        </div>
+        <span class="span">
+          〒106-0032 東京都港区六本木3-10-4 六本木パークビル B1F
+        </span>
+      </address>
+      <div class="separator"></div>
+      <div class="topbar-item item-2">
+        <div class="icon">
+          <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+        </div>
+        <span class="span">Abierto todos los días de 13:00 - 22:00 h</span>
+      </div>
+      <a href="tel:+34123456789" class="topbar-item link">
+        <div class="icon">
+          <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+        </div>
+        <span class="span">+34 123 456 789</span>
+      </a>
+      <div class="separator"></div>
+      <a href="mailto:tfgpabloruiz@tokioschool.com" class="topbar-item link">
+        <div class="icon">
+          <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+        </div>
+        <span class="span">tfgpabloruiz@tokioschool.com</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- #HEADER -->
+  <header class="header" data-header>
+    <div class="container">
+      <a href="/index.html" class="logo">
+        <img src="./assets/images/logo.png" width="160" height="50" alt="Izakaya Sakura - Home">
+      </a>
+      <nav class="navbar" data-navbar>
+        <button class="close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+        <a href="#" class="logo">
+          <img src="./assets/images/logo.png" width="160" height="50" alt="Izakaya Sakura - Home">
+        </a>
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <a href="./index.html" class="navbar-link hover-underline">
+              <div class="separator"></div>
+              <span class="span">Inicio</span>
+            </a>
+          </li>
+          <li class="navbar-item">
+            <a href="./carta.html" class="navbar-link hover-underline active">
+              <div class="separator"></div>
+              <span class="span">Carta</span>
+            </a>
+          </li>
+          <li class="navbar-item">
+            <a href="./especialidades.html" class="navbar-link hover-underline">
+              <div class="separator"></div>
+              <span class="span">Especialidades</span>
+            </a>
+          </li>
+          <li class="navbar-item">
+            <a href="./grupos.html" class="navbar-link hover-underline">
+              <div class="separator"></div>
+              <span class="span">Menús de grupos</span>
+            </a>
+          </li>
+          <li class="navbar-item">
+            <a href="./contacto.html" class="navbar-link hover-underline">
+              <div class="separator"></div>
+              <span class="span">Reservas</span>
+            </a>
+          </li>
+        </ul>
+        <div class="text-center">
+          <p class="headline-1 navbar-title">Visítanos</p>
+          <address class="body-4">
+            〒106-0032 東京都港区六本木3-10-4 六本木パークビル B1F
+          </address>
+          <p class="body-4 navbar-text">Abierto todos los días de 13:00 - 22:00 h</p>
+          <a href="mailto:tfgpabloruiz@tokioschool.com" class="body-4 sidebar-link">tfgpabloruiz@tokioschool.com</a>
+          <div class="separator"></div>
+          <p class="contact-label">Llámanos</p>
+          <a href="tel:+34 123 456 789" class="body-1 contact-number hover-underline">
+            +34 123 456 789
+          </a>
+        </div>
+      </nav>
+      <a href="./contacto.html" class="btn btn-secondary">
+        <span class="text text-1">CONTACTA AQUI</span>
+        <span class="text text-2" aria-hidden="true">CONTACTA AQUI</span>
+      </a>
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+      <div class="overlay" data-nav-toggler data-overlay></div>
+    </div>
+  </header>
+
+  <main>
+    <article>
+
+      <!-- #HERO -->
+      <section class="hero text-center" aria-label="home" id="home">
+        <ul class="hero-slider" data-hero-slider>
+          <li class="slider-item active" data-hero-slider-item>
+            <div class="slider-bg">
+              <img src="./assets/images/hero-slider-1.jpg" width="1880" height="950" alt="" class="img-cover">
+            </div>
+            <div class="slider-overlay"></div>
+            <p class="label-2 section-subtitle slider-reveal">Japón Gourmet</p>
+            <h1 class="display-1 hero-title slider-reveal">
+              Un viaje por los <br> sabores auténticos de Japón
+            </h1>
+            <p class="body-2 hero-text slider-reveal">
+              Reúnete con tu familia y descubre la felicidad en cada bocado
+            </p>
+            <a href="#" class="btn btn-primary slider-reveal">
+              <span class="text text-1">Descubre nuestra carta</span>
+              <span class="text text-2" aria-hidden="true">Descubre nuestra carta</span>
+            </a>
+          </li>
+          <li class="slider-item" data-hero-slider-item>
+            <div class="slider-bg">
+              <img src="./assets/images/hero-slider-2.jpg" width="1880" height="950" alt="" class="img-cover">
+            </div>
+            <div class="slider-overlay"></div>
+            <p class="label-2 section-subtitle slider-reveal">Espíritu Washoku</p>
+            <h1 class="display-1 hero-title slider-reveal">
+              Sabores que siguen <br> el ritmo de las estaciones
+            </h1>
+            <p class="body-2 hero-text slider-reveal">
+              Reúnete con tu familia y descubre la felicidad en cada bocado.
+            </p>
+            <a href="#" class="btn btn-primary slider-reveal">
+              <span class="text text-1">Descubre nuestra carta</span>
+              <span class="text text-2" aria-hidden="true">Descubre nuestra carta</span>
+            </a>
+          </li>
+          <li class="slider-item" data-hero-slider-item>
+            <div class="slider-bg">
+              <img src="./assets/images/hero-slider-3.jpg" width="1880" height="950" alt="" class="img-cover">
+            </div>
+            <div class="slider-overlay"></div>
+            <p class="label-2 section-subtitle slider-reveal">Estilo Izakaya</p>
+            <h1 class="display-1 hero-title slider-reveal">
+              De la tierra del sol <br> naciente a tu mesa
+            </h1>
+            <p class="body-2 hero-text slider-reveal">
+              Reúnete con tu familia y descubre la felicidad en cada bocado.
+            </p>
+            <a href="#" class="btn btn-primary slider-reveal">
+              <span class="text text-1">Descubre nuestra carta</span>
+              <span class="text text-2" aria-hidden="true">Descubre nuestra carta</span>
+            </a>
+          </li>
+        </ul>
+        <button class="slider-btn prev" aria-label="slide to previous" data-prev-btn>
+          <ion-icon name="chevron-back"></ion-icon>
+        </button>
+        <button class="slider-btn next" aria-label="slide to next" data-next-btn>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </button>
+      </section>
+      </article>
+    </main>
+
+
+
+
+<!-- #MENU -->
+
+<section class="section menu" aria-label="menu-label" id="menu">
+  <div class="container">
+    <p class="section-subtitle text-center label-2">NUESTRAS SELECCIONES</p>
+    <h2 class="headline-1 section-title text-center">Carta</h2>
+
+
+
+  
+    <!-- Entrantes -->
+
+    <h3 class="title-2 text-center">Entrantes</h3>
+    <ul class="grid-list">
+      <li>
+        <div class="menu-card hover:card">
+          <div>
+            <div class="title-wrapper">
+              <h3 class="title-3">
+                <a href="#" class="card-title" data-modal-target="modal-edamame">Edamame con Sal Maldon</a>
+              </h3>
+              <span class="span title-2">¥800</span>
+            </div>
+            <p class="card-text label-1">Habas de soja tiernas hervidas, espolvoreadas con sal gruesa.</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="menu-card hover:card">
+          <div>
+            <div class="title-wrapper">
+              <h3 class="title-3">
+                <a href="#" class="card-title" data-modal-target="modal-gyoza">Gyoza de Cerdo y Jengibre</a>
+              </h3>
+              <span class="span title-2">¥1200</span>
+            </div>
+            <p class="card-text label-1">Empanadillas fritas rellenas de cerdo y un toque picante.</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="menu-card hover:card">
+          <div>
+            <div class="title-wrapper">
+              <h3 class="title-3">
+                <a href="#" class="card-title" data-modal-target="modal-wakame">Ensalada Wakame</a>
+              </h3>
+              <span class="span title-2">¥900</span>
+            </div>
+            <p class="card-text label-1">Algas wakame frescas con sésamo y aderezo de soja.</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="menu-card hover:card">
+          <div>
+            <div class="title-wrapper">
+              <h3 class="title-3">
+                <a href="#" class="card-title" data-modal-target="modal-tartar">Tartar de Atún</a>
+              </h3>
+              <span class="span title-2">¥1800</span>
+            </div>
+            <p class="card-text label-1">Atún fresco picado con aguacate y salsa ponzu.</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="menu-card hover:card">
+          <div>
+            <div class="title-wrapper">
+              <h3 class="title-3">
+                <a href="#" class="card-title" data-modal-target="modal-tempura">Tempura de Verduras</a>
+              </h3>
+              <span class="span title-2">¥1400</span>
+            </div>
+            <p class="card-text label-1">Verduras crujientes rebozadas en tempura ligera.</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="menu-card hover:card">
+          <div>
+            <div class="title-wrapper">
+              <h3 class="title-3">
+                <a href="#" class="card-title" data-modal-target="modal-takoyaki">Takoyaki</a>
+              </h3>
+              <span class="span title-2">¥1100</span>
+            </div>
+            <p class="card-text label-1">Bolitas de pulpo fritas con salsa tonkatsu y mayonesa.</p>
+          </div>
+        </div>
+      </li>
+    </ul>
+
+
+
+  
+    <!-- Sushis -->
+
+    <h3 class="title-2 text-center">Sushi</h3>
+    <ul class="grid-list">
+      <li>
+        <div class="menu-card hover:card">
+          <div>
+            <div class="title-wrapper">
+              <h3 class="title-3">
+                <a href="#" class="card-title" data-modal-target="modal-nigiri">Nigiri de Salmón</a>
+              </h3>
+              <span class="span title-2">¥1000</span>
+            </div>
+            <p class="card-text label-1">Bola de arroz con una lámina de salmón fresco.</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="menu-card hover:card">
+          <div>
+            <div class="title-wrapper">
+              <h3 class="title-3">
+                <a href="#" class="card-title" data-modal-target="modal-maki">Maki de Atún Picante</a>
+              </h3>
+              <span class="span title-2">¥1200</span>
+            </div>
+            <p class="card-text label-1">Rollito de arroz con atún especiado y sriracha.</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="menu-card hover:card">
+          <div>
+            <div class="title-wrapper">
+              <h3 class="title-3">
+                <a href="#" class="card-title" data-modal-target="modal-uramaki">Uramaki California</a>
+              </h3>
+              <span class="span title-2">¥1300</span>
+            </div>
+            <p class="card-text label-1">Sushi invertido con cangrejo, aguacate y sésamo.</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="menu-card hover:card">
+          <div>
+            <div class="title-wrapper">
+              <h3 class="title-3">
+                <a href="#" class="card-title" data-modal-target="modal-temaki">Temaki de Anguila</a>
+              </h3>
+              <span class="span title-2">¥1500</span>
+            </div>
+            <p class="card-text label-1">Cono de alga relleno de anguila asada y arroz.</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="menu-card hover:card">
+          <div>
+            <div class="title-wrapper">
+              <h3 class="title-3">
+                <a href="#" class="card-title" data-modal-target="modal-sashimi">Sashimi de Pez Mantequilla</a>
+              </h3>
+              <span class="span title-2">¥2000</span>
+            </div>
+            <p class="card-text label-1">Finas lonchas de pez mantequilla con soja y wasabi.</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="menu-card hover:card">
+          <div>
+            <div class="title-wrapper">
+              <h3 class="title-3">
+                <a href="#" class="card-title" data-modal-target="modal-futomaki">Futomaki Vegetal</a>
+              </h3>
+              <span class="span title-2">¥1100</span>
+            </div>
+            <p class="card-text label-1">Rollito grande con pepino, zanahoria y shiitake.</p>
+          </div>
+        </div>
+      </li>
+    </ul>
+
+
+
+
+    <!-- Ramen -->
+
+    <h3 class="title-2 text-center">Ramen</h3>
+    <ul class="grid-list">
+      <li>
+        <div class="menu-card hover:card">
+          <div>
+            <div class="title-wrapper">
+              <h3 class="title-3">
+                <a href="#" class="card-title" data-modal-target="modal-shoyu">Shoyu Ramen</a>
+              </h3>
+              <span class="span title-2">¥1800</span>
+            </div>
+            <p class="card-text label-1">Caldo de soja con fideos, cerdo chashu y nori.</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="menu-card hover:card">
+          <div>
+            <div class="title-wrapper">
+              <h3 class="title-3">
+                <a href="#" class="card-title" data-modal-target="modal-miso">Miso Ramen</a>
+              </h3>
+              <span class="span title-2">¥1900</span>
+            </div>
+            <p class="card-text label-1">Caldo cremoso de miso con maíz, brotes y huevo.</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="menu-card hover:card">
+          <div>
+            <div class="title-wrapper">
+              <h3 class="title-3">
+                <a href="#" class="card-title" data-modal-target="modal-tonkotsu">Tonkotsu Ramen</a>
+              </h3>
+              <span class="span title-2">¥2000</span>
+            </div>
+            <p class="card-text label-1">Caldo espeso de cerdo con fideos y cebolla crujiente.</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="menu-card hover:card">
+          <div>
+            <div class="title-wrapper">
+              <h3 class="title-3">
+                <a href="#" class="card-title" data-modal-target="modal-tantan">Spicy Tan Tan Men</a>
+              </h3>
+              <span class="span title-2">¥2100</span>
+            </div>
+            <p class="card-text label-1">Ramen picante con carne molida y sésamo tostado.</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="menu-card hover:card">
+          <div>
+            <div class="title-wrapper">
+              <h3 class="title-3">
+                <a href="#" class="card-title" data-modal-target="modal-mariscos">Ramen de Mariscos</a>
+              </h3>
+              <span class="span title-2">¥2200</span>
+            </div>
+            <p class="card-text label-1">Caldo ligero con gambas, calamares y wakame.</p>
+          </div>
+        </div>
+      </li>
+    </ul>
+
+
+
+
+    <!-- Yakitori -->
+
+    <h3 class="title-2 text-center">Yakitori</h3>
+    <ul class="grid-list">
+      <li>
+        <div class="menu-card hover:card">
+          <div>
+            <div class="title-wrapper">
+              <h3 class="title-3">
+                <a href="#" class="card-title" data-modal-target="modal-yakitori-pollo">Yakitori de Pollo y Cebolleta</a>
+              </h3>
+              <span class="span title-2">¥900</span>
+            </div>
+            <p class="card-text label-1">Brocheta de pollo a la parrilla con cebolleta tierna.</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="menu-card hover:card">
+          <div>
+            <div class="title-wrapper">
+              <h3 class="title-3">
+                <a href="#" class="card-title" data-modal-target="modal-tsukune">Tsukune</a>
+              </h3>
+              <span class="span title-2">¥1000</span>
+            </div>
+            <p class="card-text label-1">Brocheta de albóndigas de pollo con salsa teriyaki.</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="menu-card hover:card">
+          <div>
+            <div class="title-wrapper">
+              <h3 class="title-3">
+                <a href="#" class="card-title" data-modal-target="modal-wagyu">Yakitori de Wagyu</a>
+              </h3>
+              <span class="span title-2">¥2500</span>
+            </div>
+            <p class="card-text label-1">Carne de wagyu premium asada con sal y pimienta.</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="menu-card hover:card">
+          <div>
+            <div class="title-wrapper">
+              <h3 class="title-3">
+                <a href="#" class="card-title" data-modal-target="modal-shiitake">Shiitake a la Parrilla</a>
+              </h3>
+              <span class="span title-2">¥800</span>
+            </div>
+            <p class="card-text label-1">Setas shiitake frescas con un toque de soja.</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="menu-card hover:card">
+          <div>
+            <div class="title-wrapper">
+              <h3 class="title-3">
+                <a href="#" class="card-title" data-modal-target="modal-pato">Yakitori de Pato</a>
+              </h3>
+              <span class="span title-2">¥1500</span>
+            </div>
+            <p class="card-text label-1">Pato jugoso a la parrilla con glaseado de mirin.</p>
+          </div>
+        </div>
+      </li>
+    </ul>
+
+
+
+
+    <!-- Bebidas -->
+
+    <h3 class="title-2 text-center">Bebidas</h3>
+    <ul class="grid-list">
+      <li>
+        <div class="menu-card hover:card">
+          <div>
+            <div class="title-wrapper">
+              <h3 class="title-3">
+                <a href="#" class="card-title" data-modal-target="modal-matcha">Té Matcha Frío</a>
+              </h3>
+              <span class="span title-2">¥600</span>
+            </div>
+            <p class="card-text label-1">Té verde matcha refrescante servido con hielo.</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="menu-card hover:card">
+          <div>
+            <div class="title-wrapper">
+              <h3 class="title-3">
+                <a href="#" class="card-title" data-modal-target="modal-sake">Sake Caliente</a>
+              </h3>
+              <span class="span title-2">¥900</span>
+            </div>
+            <p class="card-text label-1">Sake tradicional servido tibio en una jarrita.</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="menu-card hover:card">
+          <div>
+            <div class="title-wrapper">
+              <h3 class="title-3">
+                <a href="#" class="card-title" data-modal-target="modal-ramune">Ramune de Melón</a>
+              </h3>
+              <span class="span title-2">¥700</span>
+            </div>
+            <p class="card-text label-1">Refresco japonés gasificado con sabor a melón.</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="menu-card hover:card">
+          <div>
+            <div class="title-wrapper">
+              <h3 class="title-3">
+                <a href="#" class="card-title" data-modal-target="modal-ume">Umeshu Frío</a>
+              </h3>
+              <span class="span title-2">¥1000</span>
+            </div>
+            <p class="card-text label-1">Licor de ciruela japonesa servido con hielo.</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="menu-card hover:card">
+          <div>
+            <div class="title-wrapper">
+              <h3 class="title-3">
+                <a href="#" class="card-title" data-modal-target="modal-oolong">Té Oolong Frío</a>
+              </h3>
+              <span class="span title-2">¥600</span>
+            </div>
+            <p class="card-text label-1">Té oolong suave y refrescante con hielo.</p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+
+
+<!-- Modales para todos los platos -->
+
+<div class="modal" id="modal-edamame">
+  <div class="modal-content">
+    <span class="modal-close">×</span>
+    <img src="./assets/images/edamame.jpg" alt="Edamame con Sal Maldon" class="modal-image">
+  </div>
+</div>
+<div class="modal" id="modal-gyoza">
+  <div class="modal-content">
+    <span class="modal-close">×</span>
+    <img src="./assets/images/gyoza.jpg" alt="Gyoza de Cerdo y Jengibre" class="modal-image">
+  </div>
+</div>
+<div class="modal" id="modal-wakame">
+  <div class="modal-content">
+    <span class="modal-close">×</span>
+    <img src="./assets/images/wakame.jpg" alt="Ensalada Wakame" class="modal-image">
+  </div>
+</div>
+<div class="modal" id="modal-tartar">
+  <div class="modal-content">
+    <span class="modal-close">×</span>
+    <img src="./assets/images/tartar-atun.jpg" alt="Tartar de Atún" class="modal-image">
+  </div>
+</div>
+<div class="modal" id="modal-tempura">
+  <div class="modal-content">
+    <span class="modal-close">×</span>
+    <img src="./assets/images/tempura.jpg" alt="Tempura de Verduras" class="modal-image">
+  </div>
+</div>
+<div class="modal" id="modal-takoyaki">
+  <div class="modal-content">
+    <span class="modal-close">×</span>
+    <img src="./assets/images/takoyaki.jpg" alt="Takoyaki" class="modal-image">
+  </div>
+</div>
+<div class="modal" id="modal-nigiri">
+  <div class="modal-content">
+    <span class="modal-close">×</span>
+    <img src="./assets/images/nigiri-salmon.jpg" alt="Nigiri de Salmón" class="modal-image">
+  </div>
+</div>
+<div class="modal" id="modal-maki">
+  <div class="modal-content">
+    <span class="modal-close">×</span>
+    <img src="./assets/images/maki-atun.jpg" alt="Maki de Atún Picante" class="modal-image">
+  </div>
+</div>
+<div class="modal" id="modal-uramaki">
+  <div class="modal-content">
+    <span class="modal-close">×</span>
+    <img src="./assets/images/uramaki-california.jpg" alt="Uramaki California" class="modal-image">
+  </div>
+</div>
+<div class="modal" id="modal-temaki">
+  <div class="modal-content">
+    <span class="modal-close">×</span>
+    <img src="./assets/images/temaki-anguila.jpg" alt="Temaki de Anguila" class="modal-image">
+  </div>
+</div>
+<div class="modal" id="modal-sashimi">
+  <div class="modal-content">
+    <span class="modal-close">×</span>
+    <img src="./assets/images/sashimi-mantequilla.jpg" alt="Sashimi de Pez Mantequilla" class="modal-image">
+  </div>
+</div>
+<div class="modal" id="modal-futomaki">
+  <div class="modal-content">
+    <span class="modal-close">×</span>
+    <img src="./assets/images/futomaki.jpg" alt="Futomaki Vegetal" class="modal-image">
+  </div>
+</div>
+<div class="modal" id="modal-shoyu">
+  <div class="modal-content">
+    <span class="modal-close">×</span>
+    <img src="./assets/images/shoyu-ramen.jpg" alt="Shoyu Ramen" class="modal-image">
+  </div>
+</div>
+<div class="modal" id="modal-miso">
+  <div class="modal-content">
+    <span class="modal-close">×</span>
+    <img src="./assets/images/miso-ramen.jpg" alt="Miso Ramen" class="modal-image">
+  </div>
+</div>
+<div class="modal" id="modal-tonkotsu">
+  <div class="modal-content">
+    <span class="modal-close">×</span>
+    <img src="./assets/images/tonkotsu-ramen.jpg" alt="Tonkotsu Ramen" class="modal-image">
+  </div>
+</div>
+<div class="modal" id="modal-tantan">
+  <div class="modal-content">
+    <span class="modal-close">×</span>
+    <img src="./assets/images/spicy-tan.jpg" alt="Spicy Tan Tan Men" class="modal-image">
+  </div>
+</div>
+<div class="modal" id="modal-mariscos">
+  <div class="modal-content">
+    <span class="modal-close">×</span>
+    <img src="./assets/images/ramen-marisco.jpg" alt="Ramen de Mariscos" class="modal-image">
+  </div>
+</div>
+<div class="modal" id="modal-yakitori-pollo">
+  <div class="modal-content">
+    <span class="modal-close">×</span>
+    <img src="./assets/images/yakitori-pollo.jpg" alt="Yakitori de Pollo y Cebolleta" class="modal-image">
+  </div>
+</div>
+<div class="modal" id="modal-tsukune">
+  <div class="modal-content">
+    <span class="modal-close">×</span>
+    <img src="./assets/images/tsukune.jpg" alt="Tsukune" class="modal-image">
+  </div>
+</div>
+<div class="modal" id="modal-wagyu">
+  <div class="modal-content">
+    <span class="modal-close">×</span>
+    <img src="./assets/images/yakitori-wagyu.jpg" alt="Yakitori de Wagyu" class="modal-image">
+  </div>
+</div>
+<div class="modal" id="modal-shiitake">
+  <div class="modal-content">
+    <span class="modal-close">×</span>
+    <img src="./assets/images/shitake-parrilla.jpg" alt="Shiitake a la Parrilla" class="modal-image">
+  </div>
+</div>
+<div class="modal" id="modal-pato">
+  <div class="modal-content">
+    <span class="modal-close">×</span>
+    <img src="./assets/images/yakitori-pato.jpg" alt="Yakitori de Pato" class="modal-image">
+  </div>
+</div>
+<div class="modal" id="modal-matcha">
+  <div class="modal-content">
+    <span class="modal-close">×</span>
+    <img src="./assets/images/matcha.jpg" alt="Té Matcha Frío" class="modal-image">
+  </div>
+</div>
+<div class="modal" id="modal-sake">
+  <div class="modal-content">
+    <span class="modal-close">×</span>
+    <img src="./assets/images/sake.jpg" alt="Sake Caliente" class="modal-image">
+  </div>
+</div>
+<div class="modal" id="modal-ramune">
+  <div class="modal-content">
+    <span class="modal-close">×</span>
+    <img src="./assets/images/ramune.jpg" alt="Ramune de Melón" class="modal-image">
+  </div>
+</div>
+<div class="modal" id="modal-ume">
+  <div class="modal-content">
+    <span class="modal-close">×</span>
+    <img src="./assets/images/umeshu.jpg" alt="Umeshu Frío" class="modal-image">
+  </div>
+</div>
+<div class="modal" id="modal-oolong">
+  <div class="modal-content">
+    <span class="modal-close">×</span>
+    <img src="./assets/images/oolong.jpg" alt="Té Oolong Frío" class="modal-image">
+  </div>
+</div>
+
+<!--IMAGEN DE RELLENO-->
+
+  <section class="section testi text-center has-bg-image"
+      style="background-image: url('./assets/images/bg-relleno.jpg')" aria-label="Imagen de relleno">
+  </section>
+
+
+  <!-- #FOOTER -->
+  <footer class="footer section has-bg-image text-center" style="background-image: url('./assets/images/footer-bg.jpg')">
+    <div class="container">
+      <div class="footer-top grid-list">
+        <ul class="footer-list">
+          <li><a href="./index.html" class="label-2 footer-link hover-underline">Inicio</a></li>
+          <li><a href="./carta.html" class="label-2 footer-link hover-underline">Carta</a></li>
+          <li><a href="./especialidades.html" class="label-2 footer-link hover-underline">Especialidades</a></li>
+          <li><a href="./grupos.html" class="label-2 footer-link hover-underline">Menús de grupos</a></li>
+          <li><a href="./contacto.html" class="label-2 footer-link hover-underline">Reservas</a></li>
+        </ul>
+        <ul class="footer-list">
+          <li><a href="https://www.facebook.com/?locale=es_ES/" class="label-2 footer-link hover-underline">Facebook</a></li>
+          <li><a href="https://www.instagram.com/" class="label-2 footer-link hover-underline">Instagram</a></li>
+          <li><a href="https://x.com/" class="label-2 footer-link hover-underline">Twitter</a></li>
+          <li><a href="https://www.youtube.com/" class="label-2 footer-link hover-underline">YouTube</a></li>
+          <li><a href="https://maps.app.goo.gl/TXMZ3bjhT5GtjwX59" class="label-2 footer-link hover-underline">Google Map</a></li>
+        </ul>
+        <ul class="footer-list">
+          <li><a href="#cookies" class="label-2 footer-link hover-underline">Política de Cookies</a></li>
+          <li><a href="#privacidad" class="label-2 footer-link hover-underline">Política de Privacidad</a></li>
+          <li><a href="#terminos" class="label-2 footer-link hover-underline">Términos y Condiciones</a></li>
+          <li><a href="#aviso-legal" class="label-2 footer-link hover-underline">Aviso Legal</a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <p class="copyright">
+          © 2025 Izakaya Sakura. Todos los derechos reservados | Creado por <a href="https://github.com/pablordn" target="_blank" class="link">Pablo Ruiz</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- #BACK TO TOP -->
+  <a href="#top" class="back-top-btn active" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+  <!-- custom js link -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- ionicon link -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
